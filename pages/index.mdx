@@ -1,28 +1,96 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import img1 from '../images/lore.png'
+import img2 from '../images/notablefigures.png'
+import img3 from '../images/legendsandmyths.png'
+import img4 from '../images/bending.png'
+import img5 from '../images/familiesandclans.png'
+import img6 from '../images/nature.png'
+import img7 from '../images/nations.png'
+import img8 from '../images/items.png'
+
 <div style={{ textAlign: 'center', margin: 'auto' }}>
-  <img 
-    src="https://avatars.githubusercontent.com/u/81100152?s=200&v=4" 
-    alt="Four Nations MC" 
-    style={{ display: 'block', margin: '0 auto' }} 
-  />
-  <br></br>
-  <h1>Welcome to Four Nations MC Wiki! 👋</h1>
+  <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/XNZfxO_tBRY?si=pvUV-BWEn7Bhj0ZK" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+    ></iframe>
+  </div>
+<h1 style={{ fontSize: '1.5em' }}>Welcome to Four Nations MC Wiki! 👋</h1>
+<h1>Four Nations MC is a dynamic roleplaying server inspired by the world of Avatar: The Last Airbender and Avatar: The Legned of Korra, offering the closest experience you can get to the avatar universe. Interested in a particular area about the server? Use the options below.</h1>
 </div>
 
-## What is Four Nations MC?
 
-Four Nations MC is a dynamic roleplaying server inspired by the world of Avatar: The Last Airbender. It will be the closest experience you can get to the avatar universe. Our server offers a unique experience where players can master bending, see iconic locations, participate in fun server events, and participate in an immersive roleplaying environment. Join us to explore the rich lore of the four nations, develop your bending skills, and become part of a vibrant community. Whether you're here for the adventure, the roleplay, or the camaraderie, Four Nations MC has something for everyone!
-## Sections of the Wiki
+<style jsx>{`
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .image-grid div {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  .image-grid div:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .image-grid div {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+`}</style>
 
-### Gameplay
-In the **Gameplay** section, you will find all the information you need to get started and succeed in the world of Four Nations MC. Learn about the bending mechanics, explore the custom features of our resource pack, and discover tips and tricks to enhance your gameplay experience. Whether you are a novice or a seasoned player, this section will help you navigate the server with ease.
-
-### Nations
-The **Nations** section delves into the rich lore and structure of the four nations in our server: the Water Tribe, Earth Kingdom, Fire Nation, and Air Nomads. Here, you can explore the unique characteristics of each nation, learn about their cultures, and understand their histories. This section is essential for anyone looking to fully immerse themselves in the world of Avatar and choose the nation that best aligns with their roleplaying style.
-
-### Roleplay
-In the **Roleplay** section, we provide guidelines and tips for engaging in immersive roleplaying on the server. Discover how to create compelling characters, develop storylines, and interact with other players in character. This section also includes examples of roleplay scenarios and events that you can participate in, helping you to enhance your roleplaying experience and contribute to the vibrant community.
-
-### FAQ
-The **FAQ** section addresses the most common questions and concerns of our players. From technical issues to gameplay mechanics, this section is designed to provide quick and helpful answers to ensure that your experience on the server is as smooth as possible. If you have a question, the FAQ is the first place to check for answers.
-
-We hope you enjoy your time on the Four Nations MC server. Happy bending!
+<div className="image-grid">
+  <div>
+    <Link href="/lore">
+        <Image src={img1} alt="Lore" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/notablefigures">
+        <Image src={img2} alt="Notable Figures" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/legendsandmyths">
+        <Image src={img3} alt="Legends and Myths" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/bending">
+        <Image src={img4} alt="Bending" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/familiesandclans">
+        <Image src={img5} alt="Families and Clans" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/nature">
+        <Image src={img6} alt="Nature" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/nations">
+        <Image src={img7} alt="Nations" />
+    </Link>
+  </div>
+  <div>
+    <Link href="/items">
+        <Image src={img8} alt="Items" />
+    </Link>
+  </div>
+</div>
