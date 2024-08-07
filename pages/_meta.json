@@ -1,0 +1,22 @@
+{
+  "index": {
+    "title": "Getting Started",
+    "type": "page"
+  },
+  "gameplay": {
+    "title": "Gameplay",
+    "type": "page"
+  },
+  "nations": {
+    "title": "Nations",
+    "type": "page"
+  },
+  "roleplay": {
+    "title": "Roleplay",
+    "type": "page"
+  },
+  "faq": {
+    "title": "FAQ",
+    "type": "page"
+  }
+}
