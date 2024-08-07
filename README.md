@@ -1,23 +1,18 @@
-# Nextra Docs Template 
+# Four Nations MC Wiki
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+Welcome to the Four Nations MC Wiki project! This repository contains the source code and content for the Four Nations MC Wiki, an information hub for our Avatar roleplaying server. 
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## Contributing
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+We welcome contributions from the community! If you would like to contribute to the Four Nations MC Wiki, please follow these steps:
 
-## Quick Start
+1. Fork this repository.
+2. Make your changes in your forked repository and commit them (`git commit -m 'Add some feature'`).
+3. Push to the branch (`git push origin feature-branch`).
+4. Open a pull request.
 
-Click the button to clone this repository and deploy it on Vercel:
+Please ensure your code adheres to our coding standards and include detailed descriptions in your pull requests.
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Contact
 
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+For any inquiries, please join our [Discord server](https://discord.gg/four-nations-minecraft-636003244719603723).
